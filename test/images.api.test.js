@@ -24,7 +24,7 @@ describe.only('images', () => {
         })
     );
 
-    it('cannot /POST without album id', () => request
+    it.skip('cannot /POST without album id', () => request
         .post('/api/images')
         .send({ title: 'title', url: 'url' })
         .then(
